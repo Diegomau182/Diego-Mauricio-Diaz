@@ -6,12 +6,12 @@
 from datetime import datetime, timedelta
 
 
-class cars:
+class Cars:
     """
     inicializa un carro mediante la placa marca modelo
     tipo_vehiculo, hora_ingreso, estado.
     """
-    def __init__(self,placa="", marca="", modelo="", tipo_vehiculo=""):
+    def __init__(self,placa="", marca="", modelo="", tipo_vehiculo="",cobro=float,etado=bool):
         self.placa=placa
         self.marca=marca
         self.modelo=modelo
@@ -19,3 +19,4 @@ class cars:
         self.hora_ingreso=datetime.time.today()
         self.estado = True
         self.plus_five_hours = (datetime.now() + timedelta(hours=5))
+        self.cobro=cobro
