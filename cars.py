@@ -16,7 +16,7 @@ class Cars:
         self.marca=marca
         self.modelo=modelo
         self.tipo_vehiculo=tipo_vehiculo
-        self.hora_ingreso=datetime.time.today()
+        self.hora_ingreso=datetime.now()
         self.estado = True
         self.plus_five_hours = (datetime.now() + timedelta(hours=5))
         self.cobro=cobro
