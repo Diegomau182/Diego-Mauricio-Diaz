@@ -81,7 +81,12 @@ class Menu:
 
     def car_collection(self):
         """agrega el costo del tiempo que estuvo"""
-
+        placa = input("Ingrese la placa que busca: ")
+        My_parking=self.service_parking.my_parking
+        for car in My_parking:
+            if str(car.placa) == str(placa):
+                for x in (len(car.plus_five_hours)):
+                    x.costo=10*0.1
 
     def close(self):
         """cierra el programa"""
